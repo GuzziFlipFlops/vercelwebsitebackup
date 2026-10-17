@@ -1,27 +1,16 @@
-# Northstar landing page
+# Robotics & Programming Project Evidence
 
-A lightweight, responsive landing page built with plain HTML, CSS, and JavaScript. It has no build step or third-party runtime dependencies, so it can be deployed directly to Vercel as a static site.
+A plain static evidence page for robotics and software projects. It uses only `index.html` and `styles.css`; there is no build step or JavaScript.
 
-## Customize
+## Updating the page
 
-- Change the brand name and page copy in `index.html`.
-- Update `hello@example.com` in the contact link with your email.
-- Adjust the colors and fonts near the top of `styles.css`.
-- Replace the description and page title in the `<head>` section of `index.html`.
+- Replace bracketed placeholders in `index.html` only when you have evidence to add.
+- Keep source links beside the claims they support.
+- Add confirmed repositories at the HTML comment near the end of the Code / GitHub section.
+- Keep self-reported roles and results labeled as such until supporting evidence is linked.
 
-## Preview locally
+The previous site files are preserved under `archive/`. The root page is the active site.
 
-Open `index.html` in a browser, or run a local static server from this directory, for example:
+## Hosting
 
-```sh
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## Deploy to Vercel
-
-1. Push this folder to a GitHub repository.
-2. In Vercel, choose **Add New → Project** and import that repository.
-3. Keep the framework preset as **Other**. There is no build command; the site files are served from the project root.
-4. Deploy. Vercel will provide a public URL and can redeploy on each push to the connected branch.
+The site is static and keeps its stylesheet link relative, so it works from a GitHub Pages project path such as `/portfolio/` and from a Vercel project root. For Vercel, use the **Other** framework preset, leave the build command blank, and serve the project root (`.`). No package install or build step is needed.
